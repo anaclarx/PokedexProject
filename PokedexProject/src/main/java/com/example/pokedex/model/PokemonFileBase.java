@@ -2,21 +2,20 @@ package com.example.pokedex.model;
 
 public class PokemonFileBase extends Pokemon{
 
-    private String filePath;
+    public String filePath;
 
-    private String description;
+    public String description;
 
-    public String getDescription(){return this.description;}
-
-    public void setDescription(String description){this.description = description;}
+    public PokemonFileBase(String name, String description) {
+        super(name);
+        this.description = description;
+    }
 
 
     @Override
-    public String getDataBase() {
-        return this.filePath;
-    }
-
-    public void setFilePath(String filePath){
-        this.filePath = filePath;
+    String[] getDescription() {
+        String[] description = new String[1];
+        description[0] = this.description;
+        return description;
     }
 }

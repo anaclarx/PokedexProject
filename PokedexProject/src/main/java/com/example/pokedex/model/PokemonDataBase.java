@@ -5,40 +5,30 @@ import com.example.pokedex.controllers.PokemonDataBaseController;
 //The class should extend or implement pokemon?
 public class PokemonDataBase extends Pokemon {
 
-    private PokemonDataBaseController dataBaseInfo;
+    public String size;
 
-    public PokemonDataBase(PokemonDataBaseController dataBaseInfo){
-        this.dataBaseInfo = dataBaseInfo;
-    }
+    public String weight;
 
-    private String size;
-    private String weight;
+    //private Pokemon pokemon;
 
-    private Pokemon pokemon;
-
-    public void PokemonDatBase(){};
-
-    public String getSize(){
-        return size;
-    }
-
-    public void setSize(String size) {
+    public PokemonDataBase(String name,String weight, String size) {
+        super(name);
+        this.weight = weight;
         this.size = size;
     }
 
-    public String getWeight(){
-        return weight;
-    }
 
-    public void setWeight(String weight){
-        this.weight = weight;
-    }
+    public String getSize(){ return  this.size;}
+
+    public String getWeight(){ return  this.weight;}
 
     @Override
-    public String getDataBase() {
-        return null;
+    String[] getDescription() {
+        String[] description = new String[2];
+        description[0] = this.weight;
+        description[1] = this.size;
+        return description;
     }
-
 
     //Should it be abstract at Pokemon class??
 

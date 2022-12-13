@@ -16,6 +16,8 @@ import java.util.List;
 
 public interface PokemonDataBaseDao {
 
-    public Pokemon accessDataBase(int id);
+    public String getPokemonName(int id,  String file);
+
+    public String[] getPokemonInfo(int id,  String file);
 
 }
