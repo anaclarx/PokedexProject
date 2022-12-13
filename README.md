@@ -1,6 +1,6 @@
 # Pokedex Porject
 
-The project that was coded is located at the PokedexProject folder. All the other folders are were created and are a reference to the materials and classes given at the course by
+The project that was coded is located at the PokedexProject folder. All the other folders were created and are a reference to the materials and classes given at the course by
 Quentin Richaud.
 
 
