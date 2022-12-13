@@ -1,4 +1,10 @@
-# 1 - Slides du cours SOLID
+# Pokedex Porject
+
+The project that was coded is located at the PokedexProject folder. All the other folders are were created and are a reference to the materials and classes given at the course by
+Quentin Richaud.
+
+
+# Instructions given by the professor:
 
 Le contenu du cours magistral se trouve dans le fichier `./presentation/presentation.html`, slides animées en JS.
 
