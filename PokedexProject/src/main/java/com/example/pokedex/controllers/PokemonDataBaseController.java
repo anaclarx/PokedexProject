@@ -9,7 +9,6 @@ import com.example.pokedex.services.PokemonFileBaseDaoImpl;
 
 public class PokemonDataBaseController {
     private PokemonDataBaseDaoImpl pokemonDataBaseDaoImpl = new PokemonDataBaseDaoImpl();
-
     private PokemonFileBaseDaoImpl pokemonFileBaseDaoImpl = new PokemonFileBaseDaoImpl();
     //instantiate dao impl
     public PokemonFileBase getPokemonFileBase(int id, String file){
