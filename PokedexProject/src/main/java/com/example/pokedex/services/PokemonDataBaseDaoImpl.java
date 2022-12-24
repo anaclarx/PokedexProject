@@ -16,7 +16,7 @@ import org.json.simple.parser.ParseException;
 import java.io.IOException;
 
 public class PokemonDataBaseDaoImpl implements PokemonDataBaseDao {
-
+    //I created two separate functions to make more logical the way to create the log output and the html file.
     @Override
     public String getPokemonName(int id, String file) {
         String jsonResponse = "";
