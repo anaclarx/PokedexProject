@@ -3,6 +3,41 @@
 The project that was coded is located at the PokedexProject folder. All the other folders were created and are a reference to the materials and classes given at the course by
 Quentin Richaud.
 
+# Run Pokedex Project
+
+To run this project it is necessary to clone the git repository: git clone <project-url>
+
+With that done, it is necessary to access the project directory trought the terminal, until you enter the PokedexProject folder.
+
+Being in the PokedexProject folder, to run the project and acess the pokedex run: 
+
+If you have a Java environment on your machine, you can directly run the commands.
+
+
+# Build the project
+
+```
+./gradlew build
+```
+
+# Run the application
+
+```
+./gradlew run
+```
+
+To run the application with command line arguments, to access the Pokemon API run with just one argument, being this argument an integer number (Pokemon ID). If you get any access error or API unavailability, run the following command with 2 arguments, beignt the first one the Pokemon id and the second the file name local data base: pokemondatabase.sqlite  :
+
+```
+./gradlew run --args="premierArgument secondArgument"
+```
+
+
+# Run the tests
+
+```
+./gradlew test
+```
 
 # Instructions given by the professor:
 
