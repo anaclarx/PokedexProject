@@ -16,7 +16,7 @@ public class PokemonHtmlView implements OutputGeneratorInterfaceHtml {
     public String generateHtml() {
         String str = "<h1>" + pokemonName + "</h1>\n\t<ul>";
         str = str + "\n\t<li>Id:" + pokemonId + "</li>";
-        if(pokemonDescription.length > 1) {
+        if(pokemonDescription[1] != null) {
             str = str + "\n\t<li>Size:" + pokemonDescription[1] + "</li>";
             str = str + "\n\t<li>Weight:" + pokemonDescription[0] + "</li>";
         }

@@ -8,6 +8,8 @@ import com.example.pokedex.services.PokemonDataBaseDaoImpl;
 import com.example.pokedex.services.PokemonFileBaseDaoImpl;
 
 public class PokemonDataBaseController {
+    //Creates an instance of each type of pokemon - It can be a pokemon retrived from the API data base or from a local file.
+    //In this case it creates instance of the implementation of the DAO interface.
     private PokemonDataBaseDaoImpl pokemonDataBaseDaoImpl = new PokemonDataBaseDaoImpl();
     private PokemonFileBaseDaoImpl pokemonFileBaseDaoImpl = new PokemonFileBaseDaoImpl();
     //instantiate dao impl

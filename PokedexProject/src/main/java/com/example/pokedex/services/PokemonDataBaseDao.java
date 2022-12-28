@@ -17,7 +17,7 @@ import java.util.List;
 public interface PokemonDataBaseDao {
 
     public String getPokemonName(int id,  String file);
-
+    //The info depends on the kind of pokemon retrived - if it is from the file it has just a description, if it is from the API it has weight and size.
     public String[] getPokemonInfo(int id,  String file);
 
 }

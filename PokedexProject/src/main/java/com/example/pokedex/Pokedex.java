@@ -16,7 +16,7 @@ public class Pokedex {
     public static void main(String[] args) throws IOException {
         PokemonDataBaseController findPokemon = new PokemonDataBaseController();
         //If it has 2 arguments, it access the local file database, otherwise it acces the online API
-        if(args.length < 2){
+        if(args.length < 1){
             PokemonDataBase pokemon = findPokemon.getPokemonApi(Integer.parseInt(args[0]));
             description[0] = pokemon.weight;
             description[1] = pokemon.size;
@@ -24,8 +24,8 @@ public class Pokedex {
             PokemonHtmlView pokemonHtmlView = new PokemonHtmlView(description, pokemon.name, args[0]);
             FileLogUtility.logHtmlToFile("./output.html", pokemonHtmlView);
             ConsoleLogUtility.logTextToConsole(pokemonView);
-        }
-        else{
+        } else if (args.length>=2)
+        {
             PokemonFileBase pokemon = findPokemon.getPokemonFileBase(Integer.parseInt(args[0]),args[1]);
             description[0] = pokemon.description;
             PokemonTextView pokemonView = new PokemonTextView(description, pokemon.name);
